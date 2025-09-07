@@ -48,7 +48,9 @@
         scene.add(dirLight);
 
         // GUI for light control
-        const gui = new dat.GUI({ width: 400 });
+        const gui = new dat.GUI({ width: 600 });
+        gui.domElement.style.maxHeight = "500px";
+        gui.domElement.style.overflowY = "auto"; 
         const lightFolder = gui.addFolder('Directional Light');
         lightFolder.add(dirLight, 'intensity', 0, 2, 0.01).name('Intensity');
         lightFolder.add(dirLight.position, 'x', -100, 100, 0.1).name('Position X');
