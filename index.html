@@ -155,7 +155,7 @@
 
         // Load OBJ model
         const loader = new THREE.OBJLoader();
-        loader.load("https://ghost6910.github.io/GhostModel.github.io/eva3.obj", (object) => {
+        loader.load("https://ghost6910.github.io/GhostModel.github.io/eva3.obj?v=1", (object) => {
             let i = 0;
             object.traverse((child) => {
                 if (child.isMesh) {
